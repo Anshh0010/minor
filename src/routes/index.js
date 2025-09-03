@@ -37,6 +37,11 @@ import DataScience from "../pages/technology/DataScience";
 import SoftwareDevolopment from "../pages/technology/SoftwareDevolopment";
 import Technology from "../pages/technology/Technology";
 import PathConstants from "./PathConstants";
+import AptitudeTest from "../components/AptitudeTest";
+import CareerPathMapping from "../components/CareerPathMapping";
+import CollegeMap from "../components/CollegeMap";
+import TimelineTracker from "../components/TimelineTracker";
+import PersonalizedDashboard from "../components/PersonalizedDashboard";
 
 const routes = [{ path: PathConstants.ABOUT, element: <About /> }];
 
@@ -88,6 +93,26 @@ export const userRoutes = [
   {
     path: PathConstants.SEARCH,
     element: <PrivateComponent Component={<SearchPage />} />,
+  },
+  {
+    path: PathConstants.APTITUDE,
+    element: <PrivateComponent Component={<AptitudeTest />} />,
+  },
+  {
+    path: PathConstants.CAREERPATHS,
+    element: <PrivateComponent Component={<CareerPathMapping />} />,
+  },
+  {
+    path: PathConstants.COLLEGEMAP,
+    element: <PrivateComponent Component={<CollegeMap />} />,
+  },
+  {
+    path: PathConstants.TIMELINE,
+    element: <PrivateComponent Component={<TimelineTracker />} />,
+  },
+  {
+    path: PathConstants.DASHBOARD,
+    element: <PrivateComponent Component={<PersonalizedDashboard />} />,
   },
   {
     path: PathConstants.MEDICINE,

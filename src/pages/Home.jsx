@@ -33,7 +33,60 @@ const Home = () => {
         {/* Subjects Section */}
         <section id="subjects" className="px-4 py-16 bg-white bg-opacity-90">
           <h2 className="mb-8 text-3xl font-bold text-center">
-            Choose a Subject Stream
+            Discover Your Perfect Career Path
+          </h2>
+          
+          {/* New Features Section */}
+          <div className="max-w-6xl mx-auto mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <Link
+                to={PathConstants.APTITUDE}
+                className="group p-6 bg-gradient-to-br from-blue-500 to-purple-600 text-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              >
+                <div className="text-center">
+                  <div className="text-4xl mb-3">🧠</div>
+                  <h3 className="text-xl font-bold mb-2">Aptitude Test</h3>
+                  <p className="text-sm opacity-90">Discover your ideal career stream through our comprehensive assessment</p>
+                </div>
+              </Link>
+              
+              <Link
+                to={PathConstants.CAREERPATHS}
+                className="group p-6 bg-gradient-to-br from-green-500 to-emerald-600 text-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              >
+                <div className="text-center">
+                  <div className="text-4xl mb-3">🛤️</div>
+                  <h3 className="text-xl font-bold mb-2">Career Roadmaps</h3>
+                  <p className="text-sm opacity-90">Explore detailed career journeys from 12th grade to success</p>
+                </div>
+              </Link>
+              
+              <Link
+                to={PathConstants.COLLEGEMAP}
+                className="group p-6 bg-gradient-to-br from-orange-500 to-red-600 text-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              >
+                <div className="text-center">
+                  <div className="text-4xl mb-3">🏫</div>
+                  <h3 className="text-xl font-bold mb-2">Find Colleges</h3>
+                  <p className="text-sm opacity-90">Discover government colleges near your location</p>
+                </div>
+              </Link>
+              
+              <Link
+                to={PathConstants.TIMELINE}
+                className="group p-6 bg-gradient-to-br from-purple-500 to-pink-600 text-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              >
+                <div className="text-center">
+                  <div className="text-4xl mb-3">📅</div>
+                  <h3 className="text-xl font-bold mb-2">Timeline Tracker</h3>
+                  <p className="text-sm opacity-90">Never miss important deadlines and exam dates</p>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          <h2 className="mb-8 text-2xl font-bold text-center text-gray-700">
+            Or Browse by Subject Stream
           </h2>
           <div className="grid max-w-6xl grid-cols-1 gap-8 mx-auto sm:grid-cols-2 lg:grid-cols-3">
             {/* Science Card */}

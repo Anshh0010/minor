@@ -45,6 +45,11 @@ const PathConstants = {
   SIGNUP: "/signup",
   PROFILE: "/user/profile",
   SEARCH: "/user/search",
+  APTITUDE: "/user/aptitude-test",
+  CAREERPATHS: "/user/career-paths", 
+  COLLEGEMAP: "/user/college-map",
+  TIMELINE: "/user/timeline",
+  DASHBOARD: "/user/dashboard",
 };
 
 export default PathConstants;

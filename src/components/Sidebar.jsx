@@ -65,6 +65,46 @@ const Sidebar = () => {
         <ul className="flex flex-col gap-2 mt-5">
           <li>
             <Link
+              to={PathConstants.DASHBOARD}
+              className="block px-3 py-2 transition duration-200 ease-in-out rounded-none hover:bg-gray-600"
+            >
+              Dashboard
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={PathConstants.APTITUDE}
+              className="block px-3 py-2 transition duration-200 ease-in-out rounded-none hover:bg-gray-600"
+            >
+              Aptitude Test
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={PathConstants.CAREERPATHS}
+              className="block px-3 py-2 transition duration-200 ease-in-out rounded-none hover:bg-gray-600"
+            >
+              Career Paths
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={PathConstants.COLLEGEMAP}
+              className="block px-3 py-2 transition duration-200 ease-in-out rounded-none hover:bg-gray-600"
+            >
+              Find Colleges
+            </Link>
+          </li>
+          <li>
+            <Link
+              to={PathConstants.TIMELINE}
+              className="block px-3 py-2 transition duration-200 ease-in-out rounded-none hover:bg-gray-600"
+            >
+              Timeline
+            </Link>
+          </li>
+          <li>
+            <Link
               to={PathConstants.PROFILE}
               className="block px-3 py-2 transition duration-200 ease-in-out rounded-none hover:bg-gray-600"
             >
